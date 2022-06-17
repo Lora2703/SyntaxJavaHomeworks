@@ -13,8 +13,8 @@ public class Test {
 
         Task4 task4 = new Task4();
         Task4 anotherTask4 = new Task4(25, "No arguments onstructor", "Constructors");
-        System.out.println(task4.toString());
-        System.out.println(anotherTask4.toString());
+        System.out.println(task4);
+        System.out.println(anotherTask4);
 
         System.out.println("------------------------------------");
 
@@ -53,6 +53,11 @@ public class Test {
 //        Task6 book1 = new Task6("Shevchenko", "Kobzar");
 //        Task6 book2 = new Task6("Shevchenko", "Kobzar", "Kyiv");
 //        Task6 book3 = new Task6("Shevchenko", "Kobzar", "Kyiv", 1986);
+
+        System.out.println("--------------------------------------------");
+
+        Student student = new Student("Semen", "Kyiv");
+        System.out.println(student.displayInfo());
 
         System.out.println("--------------------------------------------");
 

@@ -11,4 +11,7 @@ public class Student {
         this.name = name;
         this.address = address;
     }
+    String displayInfo(){
+        return "Name "+name+" address "+address;
+    }
 }
