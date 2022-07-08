@@ -16,6 +16,6 @@ class Circle extends Shape {
          super(radius);
      }
      public double calculateArea(){
-         return 2*3.14*this.radius;
+         return 3.14*Math.pow(this.radius, 2);
      }
 }

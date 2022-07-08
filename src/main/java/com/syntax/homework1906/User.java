@@ -16,11 +16,13 @@ public class User {
 
 }
 class UserInfo extends User {
-    UserInfo(String name, String mobileNumber){
+    String address;
+    UserInfo(String name, String mobileNumber, String address){
         super(name, mobileNumber);
+        this.address = address;
     }
     public void userDetail(){
-        System.out.println(name+ " "+mobileNumber);
+        System.out.println(name+ " "+mobileNumber+" "+this.address);
     }
 
 }
