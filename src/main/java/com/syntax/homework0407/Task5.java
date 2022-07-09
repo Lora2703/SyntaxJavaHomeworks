@@ -10,12 +10,12 @@ public class Task5 {
         for(int i=2; i<=500; i+=2){
             evenNumbers.add(i);
         }
-        List<Integer> evenNumbers1 = new ArrayList<>();
-        for(Integer evenNumber:evenNumbers){
-            if(evenNumber%5!=0){
-                evenNumbers1.add(evenNumber);
+
+        for(int i=0; i< evenNumbers.size(); i++){
+            if(evenNumbers.get(i)%5==0){
+                evenNumbers.remove(i);
             }
         }
-        System.out.println(evenNumbers1);
+        System.out.println(evenNumbers);
     }
 }

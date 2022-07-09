@@ -13,12 +13,12 @@ public class Task3 {
         words.add("spring");
         words.add("coffee");
         words.add("autumn");
-        List<String> words1 = new ArrayList<>();
-        for(String word:words){
-            if(!word.endsWith("e")){
-                words1.add(word);
+        for(int i=0; i< words.size(); i++){
+            if(words.get(i).endsWith("e")){
+                words.remove(i);
             }
         }
-        System.out.println(words1);
+
+        System.out.println(words);
     }
 }

@@ -16,7 +16,7 @@ public class Task1 {
         list.add("Jack");
         list.add("John");
         System.out.println(list.isEmpty());
-        System.out.println(list.contains("Harold"));
+        System.out.println(list.contains("Diter"));
         System.out.println("Size of list is "+list.size());
         for(String l:list){
             System.out.println(l);
