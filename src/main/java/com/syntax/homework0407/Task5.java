@@ -2,6 +2,7 @@ package com.syntax.homework0407;
 /*Create an arrayList of even numbers from 1 to 500. Remove any number that is divisible by 5 from that arrayList.*/
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Task5 {
@@ -10,12 +11,13 @@ public class Task5 {
         for(int i=2; i<=500; i+=2){
             evenNumbers.add(i);
         }
-
-        for(int i=0; i< evenNumbers.size(); i++){
-            if(evenNumbers.get(i)%5==0){
-                evenNumbers.remove(i);
+        Iterator<Integer> iterator = evenNumbers.iterator();
+        while (iterator.hasNext()){
+            if(iterator.next()%5==0){
+                iterator.remove();
             }
         }
+
         System.out.println(evenNumbers);
     }
 }
