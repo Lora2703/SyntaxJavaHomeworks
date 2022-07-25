@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Task {
+public class Task1 {
 
     /*/*Create a class Insurance that will have an attribute as insuranceName and unimplemented
      behaviour as getQuote and cancelInsurance.
