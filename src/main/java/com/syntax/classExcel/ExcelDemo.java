@@ -10,12 +10,12 @@ import java.io.IOException;
 
 public class ExcelDemo {
     public static void main(String[] args) throws IOException {
-        String path = "C:\\Users\\Bultozavrik\\Desktop\\Book1.xlsx";
+        String path = "files/Book1.xlsx";
         FileInputStream fileInputStream = new FileInputStream(path);
         XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = xssfWorkbook.getSheet("Sheet1");
         Row row = sheet.getRow(0);
-        System.out.println(row);
+        System.out.println(row.getCell(0));
 
     }
 }
